@@ -1,0 +1,16 @@
+h1{color: blue;
+    visibility: hidden;}
+
+p{
+    color: red;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+}
+li{ 
+    text-decoration: underline;
+}
+b{
+    color: blueviolet;
+}
