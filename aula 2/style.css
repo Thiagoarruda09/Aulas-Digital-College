@@ -51,6 +51,12 @@ align-self: center;
 .coluna1 button:hover{
     background-color: white;
     color: #58af9c;
+    cursor: pointer;
+    transition: all ease 300ms;
+}
+.coluna1 button:active{
+    background-color: #58af9c;
+    color: white;
 }
 .coluna2{
     width: 60%;
@@ -74,6 +80,8 @@ align-self: center;
     background: none;
     border: 1px solid #58af9c;
     color: #58af9c;
+    cursor: pointer;
+    transition: all ease 300ms;
 }
 .coluna2 p{
     color: gray;
@@ -102,6 +110,13 @@ align-self: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.coluna2 .meio input:focus{
+    border: 1px solid #58af9c;
+}
+.coluna2 .fim button:active{
+    background-color: #58af9c;
+    color: white;
 }
 .card input{
     background-color: rgb(211, 211, 211);
