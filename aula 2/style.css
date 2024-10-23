@@ -48,6 +48,10 @@ align-self: center;
     border: 1px solid white;
     font-weight: bold;
 }
+.coluna1 button:hover{
+    background-color: white;
+    color: #58af9c;
+}
 .coluna2{
     width: 60%;
     height: 100%;
