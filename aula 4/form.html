@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- method:
+get = envia os dados via url
+post= envia os dados de forma escondida -->
+
+    <form action="">
+        <label for="nome">nome do usuario</label> <br>
+        <input type="text" id="nome"><br>
+        <label for="numero">Numero do usuario</label><br>
+        <input type="tel" id="numero"><br>
+        <label for="email">email do usuario</label><br>
+        <input type="email" id="email"><br>
+        <label for="cidade">cidade do usuario</label><br>
+        <input type="text" id="cidade"><br>
+        <label for="idade">Data de nascimento</label><br>
+        <input type="date" id="idade"><br>
+        <label for="cursos">Quantidade de cursos</label><br>
+        <input type="number"><br>
+        <label for="cor_camisa">Cor da camisa</label><br>
+        <input type="color" id="cor_camisa"><br>
+        <label for="link">Link do linkedin</label><br>
+        <input type="url" id="link"><br>
+        <label for="data_time">Data e hora de nascimento do usuario</label><br>
+        <input type="datetime-local" id="date_time"><br>
+        <label for="senha">Senha do usuario</label><br>
+        <input type="password">
+        <input type="hidden" id="token" value="12345">
+        <br><br>
+        <p>escolha o turno da sua turma</p>
+        <label for="manha">manhã</label>
+        <input type="radio" id="manha" name="turno"><br>
+        <label for="tarde">tarde</label>
+        <input type="radio" id="tarde" name="turno"><br>
+        <label for="noite">noite</label>
+        <input type="radio" id="noite" name="turno"><br>
+        <br><br>
+        <hr>
+        <p>selecione os cursos que você gostaria de fazer</p>
+
+        <label for="php">PHP</label><br>
+        <input type="checkbox" id="php" value="cursos[]"><br>
+        <label for="fs">full-stack</label><br>
+        <input type="checkbox" id="fs" value="cursos[]"><br>
+        <label for="mkt">marketing</label><br>
+        <input type="checkbox" id="mkt" value="cursos[]"><br>
+
+    
+
+        
+        <br><br>
+        <button>enviar</button>
+
+
+    </form>
+
+</body>
+
+</html>
