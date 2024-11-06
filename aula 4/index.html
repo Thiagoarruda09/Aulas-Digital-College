@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aula 4</title>
-</head>
-<body>
-   <!-- <ul type="circle">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- <ul type="circle">
     <li>ypioca</li>
     <li>açucar</li>
     <li>gelo</li>
@@ -26,7 +32,44 @@
     </ul>
     <li>reggae agarradin</li>
    </ol> -->
-   
-    
-</body>
+
+    <div class="container mt-5">
+      <div class="row col-12 offset-4 d-flex flex-column">
+        <form action="">
+          <div class="col-12 mb-2">
+            <label for="ypioca"></label>
+            <input class=" col col-3 " style="outline: 1px solid yellow;" type="text" id="ypioca">
+          </div>
+          <div class="col col-12 mb-2">
+            <select name="" id="" class="col col-3 ms-1" style="outline: 1px solid yellow;">
+              
+              <option value="" selected>categoria</option>
+              <option value="">bebidas</option>
+              <option value="">bebidas alcoolicas</option>
+            </select>
+          </div>
+          <div class="col col-12 mb-2">
+            <label for="quantidade"></label>
+            <input
+              type="number"
+              name=""
+              id="quantidade"
+          
+            class="col col-3" style="outline: 1px solid yellow;"/>
+          </div>
+          <div class="col col-12 mb-2">
+            <label for="descricao"></label>
+            <textarea name="" id="descricao" class="col col-3" placeholder="descrição do produto "style="outline: 1px solid yellow;" ></textarea><br>
+            <button class="col col-2 ms-5 btn btn-warning mt-1">enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
