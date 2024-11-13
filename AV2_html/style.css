@@ -1,0 +1,35 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.SocialLinks{
+display: flex;
+}
+p{
+color: lightslategray;
+}
+
+.container .row{
+display: flex;
+}
+.container{
+background-color: #F4F4F4;
+margin-top: 20px;
+height: 100px;
+border-radius: 5px;
+width: 400px;
+margin-left: 15px;
+}
+.icone{
+align-self: center;
+margin: 15px;
+background-color: #E8E8E8;
+padding: 10px;
+border-radius: 30px;
+
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
