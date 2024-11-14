@@ -27,9 +27,20 @@ padding: 10px;
 border-radius: 30px;
 
 }
+
+.icone:hover{
+    background-color: white;
+    transition: 1s;
+    cursor: pointer;
+}
 button{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #0373F3;
+    transition: 1s;
 }
 
