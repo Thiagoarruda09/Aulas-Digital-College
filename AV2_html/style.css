@@ -18,6 +18,12 @@ height: 100px;
 border-radius: 5px;
 width: 400px;
 margin-left: 15px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.37);
+}
+.container:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }
 .icone{
 align-self: center;
@@ -32,6 +38,8 @@ border-radius: 30px;
     background-color: white;
     transition: 1s;
     cursor: pointer;
+    transform: scale(1.1);
+  
 }
 button{
     background-color: transparent;
@@ -42,5 +50,6 @@ button{
 button:hover{
     background-color: #0373F3;
     transition: 1s;
+    transform: scale(1.1);
 }
 
