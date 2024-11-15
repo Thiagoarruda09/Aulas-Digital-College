@@ -1,0 +1,52 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-color: #F2F4F7;
+  }
+
+  .container{
+    margin-top: 200px;
+  }
+  .form{
+    background-color: white;
+    height:350px;
+    padding-top: 10px;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.036);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .botao{
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px rgba(0, 0, 0, 0.514);
+  }
+  .margem{
+    margin-left: 110px;
+  }
+h1{
+  font-size: 70px;
+}
+.descricao{
+  font-size: 30px;
+ 
+}
+a{
+  text-decoration: none;
+}
+.verde{
+  background-color: #36A420;
+  color: white;
+  padding: 10px;
+}
+input::placeholder{
+  padding-left: 10px;
+}

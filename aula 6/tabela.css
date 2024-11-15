@@ -1,0 +1,55 @@
+:root{
+    --COLOR-WHITE:#FFFFFF;
+    --COLOR-BLACK:#333333;
+
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.table {
+    width: 100%;
+    background-color: var(--COLOR-WHITE);
+
+}
+
+.table>thead {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+td,
+.table {
+    border: 1px solid #333333;
+    border-collapse: collapse;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #dedede;
+}
+
+tbody>tr:hover {
+    cursor: pointer;
+    background-color: #f4cccc;
+    font-weight: bold;
+}
+tbody > tr > td:last-child{
+    text-align: center;
+}
+.btn{
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn-editar{
+    background-color: #e69138;
+}
+.btn-excluir{
+    background-color: #c00;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
