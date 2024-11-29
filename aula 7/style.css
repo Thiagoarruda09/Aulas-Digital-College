@@ -1,0 +1,44 @@
+/* button{
+    background-color: blueviolet;
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: #e6e9af;
+    color: blueviolet;
+    transform: scale(1.5);
+    transition: 1s;
+} */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    background-color: red;
+    width: 10vw;
+    height: 10vh;
+    animation: moveRight 4s linear infinite;
+}
+@keyframes moveRight {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
