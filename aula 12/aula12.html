@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // tipos primitivos de dados
+        let nome= 'joao' ; //string
+        let idade= 30; //int
+        let saldo= -543.12 //float
+        let esta_matriculado= true //bool
+
+        //pseudotipos
+        let telefone= null
+        let endereco= undefined;
+
+        //operadores logicos / de comparação
+        // = atribuição
+        //== igualdade de valor  
+        //=== identicidade (valor e tipo iguais)
+
+        // let x=0
+
+        // if(x==='0'){
+        //     document.write('é igual')
+        // }else{
+        //     document.write('é diferente')
+        // }
+
+        const alunos=['maria',
+            'Josefa',
+            'zenilda'
+        ]
+        //para adicionar alguem na lista
+        alunos.push('amanda')
+        alunos.push('Barbara')
+        alunos.push('carla')
+
+        alunos[5] = 'denise'
+
+
+       console.log(alunos)
+       alunos.sort((a, b) => b.localeCompare(a));
+
+       const TITULO=  document.getElementById('titulo')
+
+      let i = 0
+      
+    // do {
+    //      document.write( `<h1>${alunos[i]}</h1>`) 
+    //      i++
+    // } while (i<=5);
+
+
+    alunos.forEach((aluno,index)=>{
+        alunos[index] = aluno.toUpperCase();
+        document.write(`<h1>${alunos[index]}</h1>`)
+        
+    })
+   
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
