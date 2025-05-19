@@ -46,19 +46,9 @@ function App() {
     setNovaResposta("");
   };
 
-  const excluirDuvida = (id) => {
-    fetch(`${URL}/${id}`, {
-      method: "DELETE",
-    })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Erro ao excluir dúvida no servidor.");
-        }
-      })
-      .catch((erro) => {
-        console.error("Erro ao excluir:", erro);
-      });
-  };
+const excluirDuvida = (index) => {
+  setDuvidas((prevDuvidas) => prevDuvidas.filter((_, i) => i !== index));
+};
 
   return (
     <>
@@ -163,7 +153,7 @@ function App() {
                         <hr />
                         <button
                           className="btn btn-danger"
-                          onClick={() => excluirDuvida(cada.id)}
+                         onClick={() => excluirDuvida(index)}
                         >
                           excluir
                         </button>
