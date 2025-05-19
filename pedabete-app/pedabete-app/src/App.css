@@ -13,7 +13,7 @@
 .stick{
    position: sticky;
   top: 0;
-  background-color: #343a40; /* a cor do .table-dark */
+ 
   z-index: 2; 
 }
 select{
@@ -25,6 +25,54 @@ select{
   color: #121212;
 }
 .nav{
-  background-color: #63D7FF;
+  background-color:#64A0CC;
 }
 
+.card-body{
+  background-color: #E8F5FE;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-custom th,
+.table-custom td {
+  padding: 16px 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-custom thead {
+  background-color:#E9F5FF;
+  font-weight: bold;
+  font-size: 15px;
+  color: #444;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.table-custom tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.table-custom tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.table-custom .btn {
+  font-size: 0.875rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.modal-header{
+  background-color: #E9F5FF;
+}

@@ -81,7 +81,7 @@ function App() {
             </button>
           </ul>
         </div>
-        <div className="row d-flex col-10 flex-column g-1">
+        <div className="row d-flex col-10 flex-column">
           <div className="col col-12 card card-body shadow d-flex flex-row">
             <div className="col offset-1">
               <h2>Selecione sua dúvida</h2>
@@ -101,6 +101,7 @@ function App() {
               </select>
             </div>
           </div>
+          <hr />
           <div className="col col-12 d-flex flex-row-reverse card card-body shadow">
             <div className="col">
               <h3>Confira a resposta de um profissional especializado</h3>
@@ -136,8 +137,8 @@ function App() {
               ></button>
             </div>
             <div class="modal-body">
-              <table className="table table-light table-striped shadow table-hover">
-                <thead className="table-dark stick mt-2">
+              <table className="table-custom">
+                <thead className=" stick mt-2">
                   <tr>
                     <th className="stick">duvida</th>
                     <th className="stick">resposta</th>
