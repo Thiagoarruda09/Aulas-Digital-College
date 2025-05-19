@@ -76,3 +76,6 @@ select{
 .modal-header{
   background-color: #E9F5FF;
 }
+.btn-sm{
+  width: 170px;
+}
