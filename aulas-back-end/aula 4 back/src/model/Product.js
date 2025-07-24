@@ -2,15 +2,15 @@ const database = require ('./../connection/database')
 
 
 
-async function Insert(req) {
-    const { nome, categoria_id, valor } = req.body;
+async function Insert(data) {
+    const { nome, categoria_id, valor } = data;
 
     const sql = `
         INSERT INTO tb_produto (nome, categoria_id, valor)
         VALUES('${nome}', '${categoria_id}', '${valor}')
     `;
 
-    return sql;
+    await database.execute(sql);
 }
 
 async function All(){
@@ -30,7 +30,7 @@ async function All(){
 
 async function Find(id) {
     let dados = await database.execute(`
-        SELECT * FROM tb_categoria WHERE id=${id}
+        SELECT * FROM tb_produto WHERE id=${id}
     `);
 
     return dados[0]; //retorna o unico que encontrou 
@@ -45,10 +45,7 @@ async function Remove(id){
       
 }
 
-async function Update(id){
-       
-    
-        let {nome, valor, categoria_id} = req.body;
+async function Update(nome, valor, categoria_id,id){
     
         let sql = `
             UPDATE tb_produto SET

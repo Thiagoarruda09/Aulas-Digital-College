@@ -10,13 +10,22 @@ async function All(){
     return dados
 }
 
-async function Find(){
+async function Find(id) {
+    let dados = await database.execute(`
+        SELECT * FROM tb_categoria WHERE id=${id}
+    `);
+
+    return dados[0]; //retorna o unico que encontrou 
 }
 
-async function Remove(){
-    //insert
-}
+async function Remove(id){
+    
+       
+    
+        await database.execute(`DELETE FROM tb_categoria WHERE id=${id}`);
 
+      
+}
 async function Update(){
     //insert
 }

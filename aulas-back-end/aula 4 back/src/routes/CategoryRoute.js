@@ -17,5 +17,13 @@ app.get('/api/categoria/:id', async (req, res) => {
     res.send(dados);
 });
 
+app.delete('/api/categoria/:id', async (req, res) => {
+    
+await Categoria.Remove(req.params.id)
+   
+
+    res.status(204).send();
+});
+
 module.exports = app
 

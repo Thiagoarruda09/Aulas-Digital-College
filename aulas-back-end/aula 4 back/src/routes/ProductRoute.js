@@ -36,19 +36,19 @@ await Product.Remove(req.params.id)
 
 // app.use(express.json());
 // TODO: retornar os dados que foram inseridos no banco
-app.post('/api/produtos', async (res,sql) => {
+app.post('/api/produtos', async (req,res) => {
 
-    await Product.Insert(sql)
+    await Product.Insert(req.body)
 
-    res.status(201).send(sql);
+    res.status(201).send();
 });
 
 // TODO: permitir alterar apenas alguns valores caso queira
 app.patch('/api/produtos/:id', async (req, res) => {
     let id = req.params.id;
+    let {nome, valor, categoria_id} = req.body;
 
-
-   await Product.Update(id)
+   await Product.Update(nome, valor, categoria_id, id)
 
     res.send();
 });

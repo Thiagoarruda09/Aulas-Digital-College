@@ -4,7 +4,7 @@ async function execute(sql) {
     let conexao = await mysql.createConnection({
         host: 'localhost',
         user: 'root', //root
-        password: '0000', //col123
+        password: 'col123', //col123
         database: 'db_clubedovinho',
     });
 
